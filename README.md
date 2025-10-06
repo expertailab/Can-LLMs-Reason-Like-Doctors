@@ -1,6 +1,6 @@
-# Not Yet Good Doctors: Exploring the Limits of LLMs in Complex Medical Reasoning
+# Can LLMs Think Like Doctors? Exploring the Limits of Large Language Models in Complex Medical Reasoning
 
-This repository contains materials for **"Not Yet Good Doctors: Exploring the Limits of LLMs in Complex Medical Reasoning"**, which evaluates the parametric capabilities of large language models (LLMs) in the context of complex medical reasoning and decision-making.
+This repository contains materials for **"Can LLMs Think Like Doctors? Exploring the Limits of Large Language Models in Complex Medical Reasoning"**, which evaluates the parametric capabilities of large language models (LLMs) in the context of complex medical reasoning and decision-making.
 
 This study provides a systematic evaluation of LLMs across four model categories:
 
