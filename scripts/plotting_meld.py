@@ -114,6 +114,9 @@ id2llm = {
         "open_router/anthropic/claude-sonnet-4",
         "open_router/meta-llama/llama-4-maverick"
     ],
+    "gemini": [
+        "gemini/gemini-2.5-pro"
+    ],
 }
 
 
@@ -149,7 +152,8 @@ model_order = [
     "o3-2025-04-16",
     "deepseek-r1-0528",
     "claude-sonnet-4",
-    "llama-4-maverick"
+    "llama-4-maverick",
+    "gemini-2.5-pro"
 ]
 
 
@@ -171,6 +175,7 @@ palette = {
     "HuatuoGPT-o1-72B": "#E377C2",
     "o3-2025-04-16": "#FFDD57",
     "claude-sonnet-4": "#FFA07A",
+    "gemini-2.5-pro": "#6A5ACD",
 }
 
 

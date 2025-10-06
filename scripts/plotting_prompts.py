@@ -251,23 +251,30 @@ def main(args: argparse.ArgumentParser) -> None:
                                             })
 
                 df = pd.DataFrame(data)
-                plt.figure(figsize=(18, 6))
-                sns.boxplot(x='Model', y='Value', hue='Prompt', data=df)
-                plt.ylabel('Accuracy Value (Aggregated over the 11 Datasets from the 3 Benchmarks.)')
-                plt.xticks(rotation=45)
+                plt.figure(figsize=(24, 9))
                 prompts = df['Prompt'].unique()
-                palette = sns.color_palette(n_colors=len(prompts))
+                palette = sns.color_palette("Paired", n_colors=len(prompts))
+
+                sns.boxplot(x='Model', y='Value', hue='Prompt', data=df, palette=palette)
+
+                plt.ylabel('Accuracy Value (Aggregated over the 11 Datasets from the 3 Benchmarks)', fontsize=16, labelpad=30)
+                plt.xlabel('Model', fontsize=16, labelpad=30)
+                plt.xticks(rotation=75, fontsize=14)
+
+                # Create custom legend patches
                 patches = [mpatches.Patch(color=palette[i], label=prompts[i]) for i in range(len(prompts))]
+
+                # Place legend on top, centered
                 plt.legend(handles=patches,
                         title='Prompt',
-                        loc='center left',
-                        bbox_to_anchor=(1.02, 0.5),
-                        borderaxespad=0,
-                        frameon=False,
-                        fontsize=10,
-                        title_fontsize=12)
-                plt.subplots_adjust(right=0.85)
-                plt.savefig(f'{DATA_PATH}/model_prompt_boxplot.png', dpi=300, bbox_inches='tight')
+                        loc='upper center',
+                        bbox_to_anchor=(0.5, 1.15),
+                        ncol=len(prompts),  # spread legend horizontally
+                        frameon=True,
+                        fontsize=13,
+                        title_fontsize=15)
+
+                plt.savefig(f'{DATA_PATH}/predictions/model_prompt_boxplot.png', dpi=300, bbox_inches='tight')
                 plt.close()
 
     else:
