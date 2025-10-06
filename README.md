@@ -1,6 +1,6 @@
-# Can LLMs Think Like Doctors? Exploring the Limits of Large Language Models in Complex Medical Reasoning
+# Can LLMs Reason Like Doctors? Exploring the Limits of Large Language Models in Complex Medical Reasoning
 
-This repository contains materials for **"Can LLMs Think Like Doctors? Exploring the Limits of Large Language Models in Complex Medical Reasoning"**, which evaluates the parametric capabilities of large language models (LLMs) in the context of complex medical reasoning and decision-making.
+This repository contains materials for **"Can LLMs Reason Like Doctors? Exploring the Limits of Large Language Models in Complex Medical Reasoning"**, which evaluates the parametric capabilities of large language models (LLMs) in the context of complex medical reasoning and decision-making.
 
 This study provides a systematic evaluation of LLMs across four model categories:
 
@@ -16,6 +16,7 @@ This study provides a systematic evaluation of LLMs across four model categories
 data/
 ├── benchmarks/
 ├── few_shot/
+├── fine_grained/
 ├── meld/
 └── predictions/
 scripts/
@@ -27,7 +28,8 @@ src/
 **Folder descriptions:**
 
 - `benchmarks/` — Preprocessed benchmark datasets (MedAgentsBench, MedARC-QA, MetaMedQA)  
-- `few_shot/` — Casimedicos dataset and processing script for few-shot experiments  
+- `few_shot/` — Casimedicos dataset and processing script for few-shot experiments 
+- `fine_grained/` — Data annotated for fine-grained reasoning analysis
 - `meld/` — Folder for storing result of contamination analysis  
 - `predictions/` — Folder for storing model outputs from evaluation experiments  
 - `src/` — Source code
@@ -87,5 +89,9 @@ python plotting_meld.py
 
 ```bash
 python plotting_prompts.py
+```
+
+```bash
+python plotting_fine_grained_analysis.py
 ```
 
