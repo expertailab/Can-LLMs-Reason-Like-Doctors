@@ -1,13 +1,17 @@
-# Can LLMs Reason Like Doctors? Exploring the Limits of Large Language Models in Complex Medical Reasoning
+<h1>
+  Can LLMs Reason Like Doctors?<br>
+  <sub>Exploring the Limits of Large Language Models in Complex Medical Reasoning</sub>
+</h1>
 
-This repository contains materials for **"Can LLMs Reason Like Doctors? Exploring the Limits of Large Language Models in Complex Medical Reasoning"**, which evaluates the parametric capabilities of large language models (LLMs) in the context of complex medical reasoning and decision-making.
+This repository hosts materials for the paper *"Can LLMs Reason Like Doctors? Exploring the Limits of Large Language Models in Complex Medical Reasoning"*, accepted at the *Findings* of [EACL 2026](https://2026.eacl.org/).
 
-This study provides a systematic evaluation of LLMs across four model categories:
+The work evaluates the parametric capabilities of LLMs in the context of complex medical reasoning and decision-making, assessing 77 LLMs with diverse fine-tuning approaches, ranging from 1B parameters to frontier models. Guided by medical problem-solving theory, three medical QA benchmarks have been selected to assess key abilities: reasoning processes (MedAgentsBench), susceptibility to cognitive biases (MedARC-QA), and metacognitive abilities (MetaMedQA). 
 
-- **General-purpose models**
-- **Reasoning-optimized models**
-- **Medically specialized models**
-- **Hybrid models with both reasoning and medical tuning**
+Additionally, a fine-grained dataset has been created by manually annotating a subset of questions to assess the *abduction*, *deduction*, and *induction* capabilities of LLMs, providing detailed insight into the reasoning mechanisms employed by physicians.
+
+[![Dataset on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-ffcc00?style=flat-square)](https://huggingface.co/datasets/expertailab/fine-grained-medical-reasoning)
+
+
 
 
 ## Repository Structure
